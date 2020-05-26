@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TTest" project="JUnit4" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="com.ze.junit4.test.TTest" time="0.0">
+    <testcase name="testAdd" classname="com.ze.junit4.test.TTest" time="0.0"/>
+    <testcase name="testDivide" classname="com.ze.junit4.test.TTest" time="0.0" ignored="true"/>
+  </testsuite>
+</testrun>

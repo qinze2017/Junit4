@@ -1,0 +1,14 @@
+package com.ze.junit4.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UserTest {
+
+	@Test
+	public void testGetName() {
+		fail("Not yet implemented");
+	}
+
+}

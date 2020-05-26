@@ -10,11 +10,33 @@ import java.util.Map;
 
 import static org.hamcrest.Matchers.*;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.ze.junit4.T;
 
 public class TTest {
+	
+	// construct environment for example DB connection build 
+	@BeforeClass
+	public static void beforeClass() {
+		System.out.println("BeforeClass");
+	}
+	
+	//DB connection close 
+	@AfterClass
+	public static void afterClass() {
+		System.out.println("AfterClass");
+	}
+	
+	@Before
+	public void before() {
+		System.out.println("Before");
+	}
 
 	// keeps the bar green, to keeps the code clean
 	@Test
@@ -49,7 +71,7 @@ public class TTest {
 		assertThat(map, hasValue("v"));
 	}
 	
-	
+	@Test
 	public void testConcat() {
 
 		String s = new T().concat("abc", "def");
@@ -65,13 +87,20 @@ public class TTest {
 		assertThat(s, equalToIgnoringWhiteSpace(" abc  def "));
 	}
 	
+	@Ignore
 	@Test(expected=java.lang.ArithmeticException.class, timeout=100)
 	public void testDivide() {
 		
 		int r = new T().divide(8, 2);
+		//expected
 		int w = new T().divide(8, 0);
 		
 		assertThat(r, is(4));
+	}
+	
+	@After
+	public void after() {
+		System.out.println("After");
 	}
 
 }

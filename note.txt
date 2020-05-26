@@ -20,3 +20,18 @@ Failures and Errors
 Annotations :
 @Test expected timeout
 
+@Ignore
+@Before
+@After
+
+@BeforeClass
+@AfterClass
+they should be static
+
+Run all tests
+
+Attentions :
+
+- classes should in test package
+- class name with Test as suffix ex : XXXTest
+- methods with text as prefix ex : testMethod
