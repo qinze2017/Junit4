@@ -1,0 +1,24 @@
+package com.ze.junit4.test;
+
+// use static methods, Assert is a Class
+import static junit.Assert.*;
+import static org.hamcrest.Matchers.*;
+
+import org.junit.Test;
+
+import com.ze.junit4.T;
+
+public class TTest {
+
+	// keeps the bar green, to keeps the code clean
+	@Test
+	public void testAdd() {
+		//fail("Not yet implemented");
+		int z = new T().add(5, 3);
+	    /*assertEquals(8, z);
+	    assertTrue(z > 3);
+	    assertTrue("z could not more than 8", z > 10);*/
+		assertThat(z, is(8));
+	}
+
+}

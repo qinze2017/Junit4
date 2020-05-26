@@ -1,0 +1,22 @@
+Assert : Class
+// import static methods
+import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.*;
+
+www.junit.org
+=> javadoc\index.html
+
+assertThat
+is()
+
+Issue :
+java.lang.SecurityException: class "org.hamcrest.Matchers"'s signer information does not match signer information of other classes in the same package
+
+To resolve : 
+classLoader : remove Juint4 of eclipse and reload the one of yourself in the same reference
+
+Failures and Errors
+
+Annotations :
+@Test expected timeout
+

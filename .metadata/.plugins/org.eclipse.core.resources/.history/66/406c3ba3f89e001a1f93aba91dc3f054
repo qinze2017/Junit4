@@ -1,0 +1,15 @@
+package com.ze.junit4;
+
+// Not good methods for the test
+public class Test {
+	
+	public int add(int x, int y) {
+		return x + y ;
+	}
+	
+	public static void main(String[] args) {
+		
+		int z = new Test().add(3, 5);
+		System.out.println(z);
+	}
+}

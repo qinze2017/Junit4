@@ -1,0 +1,17 @@
+package com.ze.junit4.test;
+
+// use static methods, Assert is a Class
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TTest {
+
+	@Test
+	public void testAdd() {
+		fail("Not yet implemented");
+		
+		
+	}
+
+}
